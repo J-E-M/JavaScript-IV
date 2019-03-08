@@ -31,7 +31,7 @@ class Instructor extends Person {
 
   demo(subject) {
 
-    return `Today we are learning about ${super.demo(subject)}`.;
+    return `Today we are learning about ${super.demo(subject)}`;
 
   }
 
@@ -89,7 +89,7 @@ class ProjectManagers extends Instructor {
 
     return `${this.name} announces to ${this.channel}, @channel standy times!​​​​​`
     return `${this.name} debugs ${student.name}'s code on ${this.subject}`
-    
+
   }
 
 }

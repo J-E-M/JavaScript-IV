@@ -44,15 +44,17 @@ class CharacterStats extends GameObject {
         this.healthPoints = characterStatsOptions.healthPoints;
       }
 
+      takeDamage() {
+
+      return `${this.name} took damage.`;
+
+      }
+
 }
 
 // Sets up inheritance with GameObject
 
-takeDamage() {
 
-return `${this.name} took damage.`;
-
-}
 
 /*
 === Humanoid (Having an appearance or character resembling that of a human.) ===
@@ -72,7 +74,7 @@ class Humanoid extends CharacterStats {
       this.language = humanoidOptions.language;
 }
 
-Humanoid.prototype = Object.create(CharacterStats.prototype);
+// Humanoid.prototype = Object.create(CharacterStats.prototype);
 
   greet() {
   return `${this.name} offers a greeting in ${this.language}.`;
